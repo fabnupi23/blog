@@ -23,16 +23,26 @@
     <main>
         <section class="card" id="clave-publica">
             <h2>Qué es el criptosistema de clave pública</h2>
-            <p>
-                Un criptosistema de clave pública, también conocido como criptografía asimétrica, es un sistema criptográfico que utiliza un par de claves: una pública y una privada. La clave pública se utiliza para cifrar los datos, mientras que la clave privada se utiliza para descifrarlos.
-            </p>
+            <p>La criptografía de clave pública es un criptosistema en el que las claves aparecen en pares. Los cambios realizados con una de las teclas sólo se pueden deshacer con la otra tecla. Una clave (la clave privada) se mantiene secreta y la otra se hace pública.</p>
+            <li><b>Clave Pública:</b> Esta clave se utiliza para cifrar el material. Cualquier persona que quiera enviar mensajes de forma segura puede acceder a él.</li>
+            <li><b>Clave Privada:</b> Esta clave se utiliza para descifrar material cifrado mediante la clave pública. Debe ser confidencial y accesible sólo para destinatarios autorizados.</li>
         </section>
 
         <section class="card" id="funcionamiento">
             <h2>Cómo funciona y cuáles son sus algoritmos representativos</h2>
-            <p>
-                La criptografía de clave pública funciona mediante el uso de dos claves matemáticamente relacionadas. Los algoritmos representativos incluyen RSA, DSA y ECC.
-            </p>
+            <p>La criptografía de clave pública opera a través del empleo de dos claves que guardan una relación matemática entre sí: </p>
+            <li>la clave pública.</li>
+            <li>la clave privada.</li>
+            <p>Aquí detallo el funcionamiento y algunos de los algoritmos representativos.</p>
+            <h5>Cómo Funciona:</h5>
+            <li>Generación de Claves</li>
+            <li>Cifrado</li>
+            <li>Descifrado</li>
+            <li>Firma Digital</li>
+            <h5>Algoritmos Representativos</h5>
+            <li>RSA (Rivest-Shamir-Adleman)</li>
+            <li>DSA (Digital Signature Algorithm)</li>
+            <li>ECC (Elliptic Curve Cryptography)</li>
         </section>
 
         <section class="card" id="ventajas-desventajas">
@@ -40,27 +50,25 @@
             <p>
                 <strong>Ventajas</strong>:
                 <ul>
-                    <li>Mayor seguridad debido a la utilización de dos claves.</li>
-                    <li>No es necesario compartir la clave privada.</li>
+                    <li>Mayor seguridad se logra al emplear dos claves.</li>
+                    <li>No hace falta que compartas la clave privada.</li>
                 </ul>
                 <strong>Desventajas</strong>:
                 <ul>
-                    <li>Más lento que el criptosistema simétrico.</li>
-                    <li>Complejidad en la generación de claves.</li>
+                    <li>Más pausado que el criptosistema simétrico.</li>
+                    <li>Complicaciones al crear contraseñas.</li>
                 </ul>
                 <strong>Diferencias con el criptosistema simétrico</strong>:
                 <ul>
-                    <li>El criptosistema simétrico utiliza una sola clave para cifrar y descifrar los datos.</li>
-                    <li>Los criptosistemas simétricos suelen ser más rápidos, pero menos seguros si la clave se compromete.</li>
+                    <li>El sistema criptográfico simétrico emplea una única clave tanto para encriptar como para desencriptar la información.</li>
+                    <li>Los criptosistemas simétricos, por lo general, tienden a ser más veloces, aunque disminuye su nivel de seguridad en caso de que la clave sea comprometida.</li>
                 </ul>
             </p>
         </section>
 
         <section class="card" id="caso-practico">
             <h2>Caso práctico de aplicación</h2>
-            <p>
-                Un ejemplo de aplicación práctica es el uso del algoritmo RSA en la protección de datos en transmisiones seguras a través de Internet, como en el protocolo HTTPS.
-            </p>
+            <p>Un ejemplo ilustrativo es la implementación del algoritmo RSA para salvaguardar información en comunicaciones seguras por la web, tal como en la utilización del protocolo HTTPS.</p>
         </section>
 
         <section class="card" id="observaciones">
@@ -68,11 +76,11 @@
             <p>
                 <strong>Observaciones</strong>:
                 <ul>
-                    <li>Es crucial asegurarse de que las claves se generen y almacenen de manera segura.</li>
+                    <li>Es fundamental garantizar que las contraseñas se creen y guarden de forma segura.</li>
                 </ul>
                 <strong>Recomendaciones</strong>:
                 <ul>
-                    <li>Utilizar bibliotecas y herramientas criptográficas probadas y evitar implementar algoritmos propios sin el conocimiento adecuado.</li>
+                    <li>Es recomendable emplear bibliotecas y herramientas criptográficas que hayan sido ampliamente probadas, y es aconsejable no desarrollar algoritmos propios si no se cuenta con el conocimiento adecuado.</li>
                 </ul>
             </p>
         </section>
