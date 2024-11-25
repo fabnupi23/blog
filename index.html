@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Criptosistemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog de Criptosistemas</h1>
+        <nav>
+            <ul>
+                <li><a href="#clave-publica">Clave Pública</a></li>
+                <li><a href="#funcionamiento">Funcionamiento</a></li>
+                <li><a href="#ventajas-desventajas">Ventajas y Desventajas</a></li>
+                <li><a href="#caso-practico">Caso Práctico</a></li>
+                <li><a href="#observaciones">Observaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" id="clave-publica">
+            <h2>Qué es el criptosistema de clave pública</h2>
+            <p>
+                Un criptosistema de clave pública, también conocido como criptografía asimétrica, es un sistema criptográfico que utiliza un par de claves: una pública y una privada. La clave pública se utiliza para cifrar los datos, mientras que la clave privada se utiliza para descifrarlos.
+            </p>
+        </section>
+
+        <section class="card" id="funcionamiento">
+            <h2>Cómo funciona y cuáles son sus algoritmos representativos</h2>
+            <p>
+                La criptografía de clave pública funciona mediante el uso de dos claves matemáticamente relacionadas. Los algoritmos representativos incluyen RSA, DSA y ECC.
+            </p>
+        </section>
+
+        <section class="card" id="ventajas-desventajas">
+            <h2>Ventajas, desventajas y diferencias con el criptosistema simétrico</h2>
+            <p>
+                <strong>Ventajas</strong>:
+                <ul>
+                    <li>Mayor seguridad debido a la utilización de dos claves.</li>
+                    <li>No es necesario compartir la clave privada.</li>
+                </ul>
+                <strong>Desventajas</strong>:
+                <ul>
+                    <li>Más lento que el criptosistema simétrico.</li>
+                    <li>Complejidad en la generación de claves.</li>
+                </ul>
+                <strong>Diferencias con el criptosistema simétrico</strong>:
+                <ul>
+                    <li>El criptosistema simétrico utiliza una sola clave para cifrar y descifrar los datos.</li>
+                    <li>Los criptosistemas simétricos suelen ser más rápidos, pero menos seguros si la clave se compromete.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="card" id="caso-practico">
+            <h2>Caso práctico de aplicación</h2>
+            <p>
+                Un ejemplo de aplicación práctica es el uso del algoritmo RSA en la protección de datos en transmisiones seguras a través de Internet, como en el protocolo HTTPS.
+            </p>
+        </section>
+
+        <section class="card" id="observaciones">
+            <h2>Observaciones y recomendaciones para implementar el criptosistema</h2>
+            <p>
+                <strong>Observaciones</strong>:
+                <ul>
+                    <li>Es crucial asegurarse de que las claves se generen y almacenen de manera segura.</li>
+                </ul>
+                <strong>Recomendaciones</strong>:
+                <ul>
+                    <li>Utilizar bibliotecas y herramientas criptográficas probadas y evitar implementar algoritmos propios sin el conocimiento adecuado.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Blog de Criptosistemas © 2024</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
